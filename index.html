@@ -1,0 +1,77 @@
+ 
+<html>
+  <head>
+    <title>Emotion To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+<h3 class="btn btn-warning heading">EMOTION EMOJI IDENTIFICATION APP 
+<br>
+<span>&#x1F60E;</span>
+<span>😄</span>
+<span>👿</span>
+<span>😨</span>
+<span>😪</span>
+</h3>
+      <br><br>
+
+      <p style="font-size: 22px;">Take your selfie to generate emoji
+      	<br>
+        <b style="color: yellow">Are you Happy?</b>
+        <br>
+        <b style="color: black">Are you Sad?</b>
+        <br>
+        <b style="color: red">Are you Angry?</b>
+        <br>
+      </p>
+
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+	      <label>Capture Image </label>
+<div id="camera"></div>
+        <br><br>
+<button onclick="snap()" class="btn btn-secondary">Snap Picture</button>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        
+<h5 class="btn btn-default">prediction-1</h5>
+   <P class="emotion" id="emo"></P> 
+   <p class="emoticon" id="emoji"></p>    
+   <br>
+   <h5 class="btn btn-default">prediction-2</h5>
+   <P class="emotion" id="emo-2"></P> 
+   <p class="emoticon" id="emoji-2"></p>    
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+	      <label>Snapshot - </label>
+        <div id="result"></div>
+        <br><br>
+<button onclick="identify()" class="btn btn-secondary">Identify Emotion</button>
+      </div>
+    </center>
+
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+<div style="text-align: right;">
+<p style="font-size: 10px ;">*HOVER ON BUTTONS FOR TEXT</p>
+</div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 

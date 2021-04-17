@@ -1,0 +1,40 @@
+body {
+  color: white;
+  background-color: olivedrab;
+}
+
+span {
+  font-size: 30px;
+}
+
+#camera, #result {
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px;
+}
+
+#emo, #emo-2 {
+  color: black;
+}
+
+.emotion {
+  font-size: 40px;
+}
+
+.emoticon {
+  font-size: 48px;
+}
+
+.heading {
+  font-size: 30px;
+  letter-spacing: 20px;
+}
+
+label {
+  font-size: 14px;
+  color: #62b33a;
+  padding: 6px;
+  border-radius: 10px;
+  background-color: white;
+  border: 2px solid black;
+}
